@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background:#9CDBA6;
+}
+.main{
+    margin-top:20px;
+}
+.main form{
+    display:flex;
+    flex-direction: column;
+    gap:14px;
+}
+.main input{
+    height:32px;
+    margin:10px;
+    border:none;
+    background-color:white;
+    padding:8px;
+    font-size:20px;
+    outline:none;   
+}
+.main textarea{
+    margin:10px;
+    border:none;
+    background-color:white;
+    font-size:20px;
+    outline:none; 
+}
+.main input, textarea, button{
+    margin:10px;
+}
+.main button{
+    background:#468585;
+    color:white;
+    width:84px;
+    height:34px;
+    border:none;
+    outline:none;
+    border-radius:4px;
+    font-weight:700;
+    cursor:pointer;
+}
+.container{
+    box-sizing: border-box;
+    width:auto;
+    margin: 30px 10px ;
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+    flex-wrap:nowrap;
+  
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    max-width: 20vw;
+    gap:8px;
+    height:20vh;    
+    border:2px solid white;
+    padding:8px;
+}
+.card a{
+  text-decoration:none;
+}
+.feature{
+    display:flex;
+    justify-content: space-between;
+}
+.feature form input{
+    outline:none;
+    border:none;
+    color:red;
+    cursor: pointer;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New App</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <form action="/note" method="post">
+            <input type="text" placeholder="Title" name="title" id="">
+            <textarea name="details" placeholder="Write details" id=""></textarea>
+            <button value="submit">Create</button>
+        </form>
+    </div>
+
+
+    <div class="container">
+                <% files.forEach(val => { %>
+                    <div class="card">
+                        <h2><%=  val %> </h2> 
+                       <div class="feature">
+                        <a href="/:<%= val %>">Read more</a>
+                        <form action="/:<%= val %>" method="post">
+                            <input type="submit" value="delete">
+                        </form>
+                       </div>
+                    </div>
+                <% }) %>
+        <!-- <div class="card">
+            <h2>This is a title</h2>
+            <span>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus dolores totam doloribus
+                voluptate tempora libero dolor doloremque harum eum at!
+            </span>
+        </div> -->
+    </div>
+</body>
+
+</html>
