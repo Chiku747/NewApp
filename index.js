@@ -47,5 +47,5 @@ app.post("/:page", function (req, res) {
   res.redirect("/");
 })
 
-
-  app.listen(3000);
+ const PORT = process.env.variable || 3000;
+  app.listen(PORT);
